@@ -27,11 +27,11 @@ async (conn, mek, m, { from, reply }) => {
         const repoData = await response.json();
 
         // Format the repository information
-        const formattedInfo = `*BOT NAME:* *${repoData.name}*\n\n*OWNER NAME:* *${repoData.owner.login}*\n\n*STARS:* *${repoData.stargazers_count}*\n\n*FORKS:* *${repoData.forks_count}*\n\n*GITHUB LINK:*\n> ${repoData.html_url}\n\n*DESCRIPTION:*\n> ${repoData.description || 'No description'}\n\n*Don't Forget To Star and Fork Repository*\n\n> *© Powered By CRISS VEVO 🖤*`;
+        const formattedInfo = `*BOT NAME:* *${repoData.name}*\n\n*OWNER NAME:* *${repoData.owner.login}*\n\n*STARS:* *${repoData.stargazers_count}*\n\n*FORKS:* *${repoData.forks_count}*\n\n*GITHUB LINK:*\n> ${repoData.html_url}\n\n*DESCRIPTION:*\n> ${repoData.description || 'No description'}\n\n*Don't Forget To Star and Fork Repository*\n\n> *© Powered By CYBERDEVS-XMD 🖤*`;
 
         // Send an image with the formatted info as a caption and context info
         await conn.sendMessage(from, {
-            image: { url: `https://res.cloudinary.com/dgy2dutjs/image/upload/v1751624587/url.crissvevo.co.tz/IMG_2353_fze42l.jpg` },
+            image: { url: `https://i.imgur.com/VwloR6v.jpeg` },
             caption: formattedInfo,
             contextInfo: { 
                 mentionedJid: [m.sender],
